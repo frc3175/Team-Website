@@ -10,107 +10,75 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<script>
-$(document).ready(function(){
-	if(navigator.userAgent.indexOf("Android") != -1 || navigator.userAgent.indexOf("iPhone") != -1 || navigator.userAgent.indexOf("iPad") != -1){
-		$("body").css("font-size","35px")
-    }
-});
-if (location.protocol != 'https:')
-{
- location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<script>
+				$(document).ready(function() {
+						if (navigator.userAgent.indexOf("Android") != -1 || navigator.userAgent.indexOf("iPhone") != -1 || navigator.userAgent.indexOf("iPad") != -1) {
+								$("body").css("font-size","35px");
+						}
+				});
 
-  ga('create', 'UA-105323938-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<style type="text/css">
-footer {
-    position: relative;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-}
-</style>
-<link type="text/css" rel="stylesheet" href="blog.css" />
+				/* THIS PREVENTS LOCAL TESTING! Uncomment when pushed to production if you so desire.
+				if (location.protocol != 'https:') {
+						location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+				}
+				*/
+
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-105323938-1', 'auto');
+				ga('send', 'pageview');
+		</script>
+		<style type="text/css">
+				footer {
+				    position: relative;
+				    bottom: 0;
+				    height: 100px;
+				    width: 100%;
+				}
+		</style>
+
+		<link type="text/css" rel="stylesheet" href="css/blog.css" />
 </head>
 
 <body>
-<div id="titlebar">
-<h1>University Liggett School<br /><i><a href="https://www.firstinspires.org/" target="_blank">FIRST</a> Robotics</i></h1>
-</div>
-<table style="width:100%;background: red;text-align: center;">
-        <tbody><tr>
-            <td>
-                <a href="frc.html" data-ajax="false">FRC</a>
-            </td>
-            <td>
-				<a href="ftc.html" data-ajax="false">FTC</a>
-            </td>
-			<td>
-				<a href="fll.html" data-ajax="false">FLL</a>
-            </td>
-			<td>
-				<a href="announcements.php" data-ajax="false">Announcements</a>
-            </td>
-			<td>
-				<a href="sponsors.html" data-ajax="false">Sponsors</a>
-            </td>
-			<td>
-				<a href="tutorials.html" data-ajax="false">Tutorials</a>
-            </td>
-			<td>
-				<a href="contact.html" data-ajax="false">Contact</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+		<div id="titlebar">
+				<h1>University Liggett School<br /><i><a href="https://www.firstinspires.org/" target="_blank">FIRST</a> Robotics</i></h1>
+		</div>
 
-<div id="main" style="font-size: 20px;">
-<p>
-FTC 2017:
-</p>
-<p>
--9/15/17 Session 1: Introduction to Programming
-<a href="1.IntroToProgramming.zip" target="_blank">Download Zip</a>
-</p>
-<p>
--9/22/17 Session 2: Programming Setup and Introduction to Java
-<a href="2.ProgrammingSetUp.zip" target="_blank">Download Zip</a>
-</p>
-<p>
--9/29/17 Session 3: Gentle Intro into Robot Wiring and Programming with Blockly: 
-<a href="3.ProgrammingWithBlockly.zip" target="_blank">Download Zip</a>
-</p>
-<p>
--10/6/17 Session 4: Becoming a New Robotics Programmer: 
-<a href="ProgrammerResources.pdf" target="_blank">ProgrammerResources.pdf</a>
-</p>
-<p>
--10/20/17 Session 5: Simple OP Mode and Linear Actuators: 
-<a href="OpModeAndLinearActuators.pdf" target="_blank">OpModeAndLinearActuators.pdf</a>
-</p>
-<p>
--10/27/17 Session 6: Color Sensors and Autonomous Mode: 
-<a href="SensorsAndAuton.pdf" target="_blank">SensorsAndAuton.pdf</a>
-</p>
-<p>
--Programmer Setup: 
-<a href="Setup.pdf" target="_blank">Setup.pdf</a>
-</p>
-<p>
--Basic instructions of wiring an FTC competition robot: 
-<a href="ftcwiring.pdf" target="_blank">FTC Wiring</a>
-</p>
-</div>
-<div>
-<footer>
-<input type="button" onclick="location.href='http://liggettrobotics.com';" value="Homepage" />
-</footer>
-</div>
+		<table style="width: 100%; background-color: red; text-align: center">
+			<tbody>
+				<tr>
+					<td><a href="frc.html" data-ajax="false">FRC</a></td>
+					<td><a href="ftc.html" data-ajax="false">FTC</a></td>
+					<td><a href="fll.html" data-ajax="false">FLL</a></td>
+					<td><a href="announcements.php" data-ajax="false">Announcements</a></td>
+					<td><a href="sponsors.html" data-ajax="false">Sponsors</a></td>
+					<td><a href="tutorials.html" data-ajax="false">Tutorials</a></td>
+					<td><a href="contact.html" data-ajax="false">Contact</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="main" style="font-size: 20px; padding: 20px 0px 20px 15%;">
+				<h2>FTC 2017:</h2>
+				<ul>
+						<li>9/15/17-&nbsp;&nbsp;&nbsp;Session 1: Introduction to Programming: <a href="lessons/1.IntroToProgramming.zip" target="_blank">Download Zip</a></li>
+						<li>9/22/17-&nbsp;&nbsp;&nbsp;Session 2: Programming Setup and Introduction to Java: <a href="lessons/2.ProgrammingSetUp.zip" target="_blank">Download Zip</a></li>
+						<li>9/29/17-&nbsp;&nbsp;&nbsp;Session 3: Gentle Intro into Robot Wiring and Programming with Blockly: <a href="lessons/3.ProgrammingWithBlockly.zip" target="_blank">Download Zip</a></li>
+						<li>10/6/17-&nbsp;&nbsp;&nbsp;Session 4: Becoming a New Robotics Programmer: <a href="lessons/ProgrammerResources.pdf" target="_blank">ProgrammerResources.pdf</a></li>
+						<li>10/20/17- Session 5: Simple OP Mode and Linear Actuators: <a href="lessons/OpModeAndLinearActuators.pdf" target="_blank">OpModeAndLinearActuators.pdf</a></li>
+						<li>10/27/17- Session 6: Color Sensors and Autonomous Mode: <a href="lessons/SensorsAndAuton.pdf" target="_blank">SensorsAndAuton.pdf</a></li>
+						<li>Programmer Setup: <a href="lessons/Setup.pdf" target="_blank">Setup.pdf</a></li>
+						<li>Basic instructions of wiring an FTC competition robot: <a href="lessons/ftcwiring.pdf" target="_blank">FTC Wiring</a></li>
+				</ul>
+		</div>
+		<div>
+			<footer>
+				<input type="button" onclick="location.href='http://liggettrobotics.com';" value="Homepage" />
+			</footer>
+		</div>
 </body>
 </html>

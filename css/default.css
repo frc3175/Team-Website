@@ -21,6 +21,7 @@
 	width:100%;
 	background: red;
 	text-align: center;
+	height: 30px;
 }
 
 #nav a {
@@ -69,13 +70,6 @@ h1 {
 	border: 5px solid gray;
 	margin-bottom: 25px;
 	font-variant: small-caps;
-}
-
-table {
-	width:100%;
-	background: red;
-	text-align: center;
-	height: 30px;
 }
 
 a {

@@ -46,7 +46,7 @@
 				}
 		</style>
 
-		<link type="text/css" rel="stylesheet" href="blog.css" />
+		<link type="text/css" rel="stylesheet" href="css/default.css" />
 </head>
 
 <body>

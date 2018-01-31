@@ -7,14 +7,17 @@ variable, form, fieldset, blockquote {
   font-size: 100%;
   font-weight: normal;
 }
+
 ol {
   margin-left: 1.4em;
   list-style: decimal;
 }
+
 ul {
   margin-left: 1.4em;
   list-style:square;
 }
+
 img {
   border: 0;
 }

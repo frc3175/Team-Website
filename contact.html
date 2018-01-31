@@ -37,33 +37,25 @@
 		</script>
 		<style type="text/css">
 				#contact {
-					width: 500px;
-					margin: 50px;
+						width: 500px;
+						margin: 50px;
 				    border: 1px solid black;
-				    padding: 30px 30px 30px 30px;
+				    padding: 30px 0px 30px 30px;
 				    border-radius: 5px;
 				}
 
 				#team_contact {
-					width: 500px;
-					margin: 50px;
-				    border: 1px solid black;
-				    padding: 30px 30px 30px 30px;
+						width: 500px;
+						margin: 50px;
+				    border: 1px solid red;
+				    padding: 30px 0px 30px 30px;
 				    border-radius: 50px;
-					border-color: red;"
 				}
 
-				#navbar {
-					width:100%;
-					background: red;
-					text-align: center;
-				}
-
-				footer {
-				    position: relative;
-				    bottom: 0;
-				    height: 100px;
-				    width: 100%;
+				@media screen and (max-width: 480px) {
+						#contact, #team_contact {
+								padding: 30px 0px 30px 0px;
+						}
 				}
 		</style>
 
@@ -116,14 +108,14 @@
 								<p><a href="https://appsto.re/us/omu2ib.i" target="_blank">Step 1: Download Loop Group Messenger from the App Store</a></p>
 								<p><a href="https://loop.social/t/58270/t5wj3n?sender_id=963" target="_blank">Step 2: Join the @liggettrobotics group</a></p>
 								<div id="selectTitle">Step 3: Follow the group that you are a part of</div>
-								<div style="width: 50px">
+								<div style="width: 100px;">
 										<select id="pulldown">
 										    <option selected="selected" value="">Select</option>
 										    <option value="https://loop.social/t/58271/g84v7g?sender_id=963"># frc3175 </option>
 										    <option value="https://loop.social/t/58272/ergfji?sender_id=963"># ftc7140 </option>
 										    <option value="https://loop.social/t/58679/41hem4?sender_id=963"># parents </option>
 										</select>
-										<input type="button" value="Go" id="btn"/>
+										<input type="button" value="Go" id="btn" />
 								</div>
 						</center>
 				</center>
